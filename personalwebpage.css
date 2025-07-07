@@ -1,0 +1,188 @@
+body{
+background-color: rgb(255, 255, 255) ;
+display: grid; 
+grid-template-areas:
+/*"head head head"*/
+"side aaa aaa" 
+"side aaa aaa"
+"side ppp ppp"
+;
+}
+
+.skills {
+    color: rgb(4, 0, 242);
+    border: 1px solid rgb(8, 27, 168);
+    font-weight: 1700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    bottom: 10px;
+    width: fit-content;
+    left: 15px;
+    justify-content: left;
+}
+
+#icon-img{
+    /*position: relative;
+    max-width: 20%;
+    max-height: 20%;
+    margin-top: 90px;*/
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+#title{
+   grid-area: head;
+    position: fixed;
+    background-color: black;
+    color: aliceblue;
+    font-family: monospace;
+     top: 0%;
+    width: 300000px;
+    left: 0;
+    background-color: black;
+    color: aliceblue;
+    font-family: monospace;
+    padding: 10px;
+}
+
+#contr{
+    grid-area: cont;
+    background-color: rgb(133, 130, 130);
+    display: grid; 
+    width: 100%;
+    /*grid-row: 1/3;*/
+    grid-area: side;
+    /*flex-direction: column;
+    align-items: start;
+    flex-flow: column wrap;
+    align-self: center;*/
+    position: relative;
+    top: 100px;
+    font-family: monospace;
+}
+
+.muhana {
+    position: relative;
+     
+    
+}
+
+.contentpics {
+    display: flex;
+    gap: 10px; 
+    align-items: center;
+    position: relative;
+    left: 7px;
+    bottom: 30px;
+}
+
+.swe {
+    /*background-color: rgb(255, 0, 0);*/
+    position: relative;
+    left: 20px;
+    bottom: 30px;
+}
+
+.info {
+    grid-area: aaa;
+    display: grid;
+    grid-column: 3/4;
+    border-color: black;
+    font-family: monospace;
+}
+
+.edu {
+    background-color: rgb(237, 237, 237);
+    grid-area: ab;
+    position: relative;
+    top: 235px;
+    left: 2px;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.about{
+    background-color: rgb(237, 237, 237);
+    grid-area: edu;
+    position: relative;
+    top: 60px;
+    left: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.project{
+    background-color:  rgb(237, 237, 237);
+    grid-area: ppp;
+    position: relative;
+    top: 550px;
+    left: 3px;
+    text-align: center;
+}
+
+
+@media (max-width: 992px) {
+    #icon-img {
+      height: 70px;
+      width: 55px;
+      left: 20px;
+    }
+  
+    .contentpics {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills {
+      font-size: 16px;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info {
+      padding: 10px;
+    }
+  
+    .contentpics {
+      gap: 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #contr {
+      grid-template-areas:
+        "aaa"
+        "ppp"
+        "side";
+    }
+  
+    #icon-img {
+      height: 60px;
+      width: 50px;
+      left: 10px;
+    }
+  
+    .skills {
+      font-size: 14px;
+    }
+  
+    .contentpics {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+  
+    .info {
+      text-align: center;
+      padding: 5px;
+    }
+  }
+  
